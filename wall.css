@@ -1,6 +1,9 @@
 @media (color) {
-  :root { background: deeppink; color: #020 }
   ::selection { background: skyblue; color: midnightblue }
+  :root { background: deeppink; color: #020 }
+  .about {}
+  :link,
+  :visited { background: none; color: inherit }
   :focus { outline-color: mintcream }
   :hover { text-decoration-color: currentColor }
   .bea________ { background: #bea; color: #077 }
@@ -12,14 +15,26 @@
 :root {
   font-family: sans-serif;
   line-height: 1;
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 body {
   margin: 0;
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.jam {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
 }
 
 .mural {
@@ -27,13 +42,13 @@ body {
   margin: 0;
   display: flex;
   flex-flow: column;
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 .volume {
   box-sizing: border-box;
-  font-size: calc(6rem + 3vmin);
+  font-size: calc(5rem + 3vmin);
   font-weight: bold;
   padding: 3rem;
   flex: 1 1 25%;
@@ -47,11 +62,38 @@ body {
 ._____doo___ { min-width: 80% }
 .________bee { min-width: 50% }
 
+.volume:not(:hover) {
+  text-decoration: none;
+}
+
+.about {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  margin: 1rem;
+  margin-block-start: 5rem;
+  max-width: 20em;
+  line-height: 1.5;
+}
+
+.text {
+  display: inline;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+}
+
+.bold {
+  font-style: unset;
+  font-weight: bold;
+}
+
+.pad-all { padding: 2rem }
+.pad-north { padding-block-start: 2rem }
+.pad-south { padding-block-end: 2rem }
+.pad-west { padding-inline-start: 2rem }
+.pad-east { padding-inline-end: 2rem }
+
 :focus {
   outline-style: dashed;
   outline-width: .5rem;
-}
-
-.volume:not(:hover) {
-  text-decoration: none;
 }
