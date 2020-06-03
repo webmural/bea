@@ -9,22 +9,34 @@
   .________bee { background: #bee; color: #d00 }
 }
 
-:root { font-family: sans-serif; line-height: 1 }
-body { margin: 0 }
+:root {
+  font-family: sans-serif;
+  line-height: 1;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
 
 .mural {
   box-sizing: border-box;
   margin: 0;
   display: flex;
   flex-flow: column;
+  height: 100%;
+  width: 100%;
 }
 
 .volume {
   box-sizing: border-box;
-  font-size: 20vh;
+  font-size: 25rem;
   font-weight: bold;
-  padding: 2.5vh;
-  flex: 1 1 25vh;
+  padding: 3rem;
+  flex: 1 1 25%;
   margin-inline-end: auto;
   display: flex;
   align-items: center;
