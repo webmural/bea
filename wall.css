@@ -11,15 +11,22 @@
 
 :root { font-family: sans-serif; line-height: 1 }
 body { margin: 0 }
-.mural { margin: 0 }
+
+.mural {
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+}
 
 .volume {
   box-sizing: border-box;
-  display: table;
   font-size: 20vh;
   font-weight: bold;
   padding: 2.5vh;
   min-height: 25vh;
+  margin-inline-end: auto;
+  display: flex;
+  align-items: center;
 }
 
 .bea________ { min-width: 50% }
@@ -29,9 +36,7 @@ body { margin: 0 }
 
 @media (orientation: portrait) {
   .volume {
-    font-size: 10vh;
-    text-align: center;
-    writing-mode: vertical-lr;
+    font-size: 20vw;
     padding: 2.5vw;
     min-height: 25vh;
   }
