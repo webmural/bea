@@ -1,25 +1,47 @@
 @media (color) {
-  :root {
-    background: seashell;
-    color: #123;
-  }
+  :root { background: deeppink; color: #020 }
+  ::selection { background: skyblue; color: midnightblue }
+  :focus { outline-color: mintcream }
+  :hover { text-decoration-color: currentColor }
+  .bea________ { background: #bea; color: #077 }
+  .___ba______ { background: #baa; color: #544 }
+  ._____doo___ { background: #d00; color: #bee }
+  .________bee { background: #bee; color: #d00 }
+}
 
-  ::selection {
-    background: aqua;
-    color: #111;
-  }
+:root { font-family: sans-serif; line-height: 1 }
+body { margin: 0 }
+.mural { margin: 0 }
 
-  :link,
-  :visited {
-    color: #808;
-  }
+.volume {
+  box-sizing: border-box;
+  display: table;
+  font-size: 20vh;
+  font-weight: bold;
+  padding: 2.5vh;
+  min-height: 25vh;
+}
 
-  :focus {
-    outline-color: #505;
+.bea________ { min-width: 50% }
+.___ba______ { min-width: 30% }
+._____doo___ { min-width: 80% }
+.________bee { min-width: 50% }
+
+@media (orientation: portrait) {
+  .volume {
+    font-size: 10vh;
+    text-align: center;
+    writing-mode: vertical-lr;
+    padding: 2.5vw;
+    min-height: 25vh;
   }
 }
 
-:root {
-  font-family: sans-serif;
-  font-size: calc(1em + 1vmin);
+:focus {
+  outline-style: dashed;
+  outline-width: .5rem;
+}
+
+.volume:not(:hover) {
+  text-decoration: none;
 }
