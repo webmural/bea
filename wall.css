@@ -33,7 +33,7 @@ body {
 
 .volume {
   box-sizing: border-box;
-  font-size: calc(10rem + 10vmin);
+  font-size: calc(6rem + 3vmin);
   font-weight: bold;
   padding: 3rem;
   flex: 1 1 25%;
