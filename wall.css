@@ -33,7 +33,7 @@ body {
 
 .volume {
   box-sizing: border-box;
-  font-size: 25rem;
+  font-size: calc(10rem + 10vmin);
   font-weight: bold;
   padding: 3rem;
   flex: 1 1 25%;
@@ -46,13 +46,6 @@ body {
 .___ba______ { min-width: 30% }
 ._____doo___ { min-width: 80% }
 .________bee { min-width: 50% }
-
-@media (orientation: portrait) {
-  .volume {
-    font-size: 20vw;
-    padding: 2.5vw;
-  }
-}
 
 :focus {
   outline-style: dashed;
