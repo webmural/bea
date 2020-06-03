@@ -13,6 +13,7 @@
 body { margin: 0 }
 
 .mural {
+  box-sizing: border-box;
   margin: 0;
   display: flex;
   flex-flow: column;
@@ -23,7 +24,7 @@ body { margin: 0 }
   font-size: 20vh;
   font-weight: bold;
   padding: 2.5vh;
-  min-height: 25vh;
+  flex: 1 1 25vh;
   margin-inline-end: auto;
   display: flex;
   align-items: center;
@@ -38,7 +39,6 @@ body { margin: 0 }
   .volume {
     font-size: 20vw;
     padding: 2.5vw;
-    min-height: 25vh;
   }
 }
 
