@@ -1,9 +1,17 @@
 @media (color) {
-  ::selection { background: skyblue; color: midnightblue }
-  :root { background: deeppink; color: #020 }
-  .about {}
+  ::selection {
+    background: skyblue;
+    color: midnightblue;
+  }
+  :root {
+    background: deeppink;
+    color: #020;
+  }
   :link,
-  :visited { background: none; color: inherit }
+  :visited {
+    background: none;
+    color: inherit;
+  }
   :focus { outline-color: mintcream }
   :hover { text-decoration-color: currentColor }
   .bea________ { background: #bea; color: #077 }
@@ -35,7 +43,6 @@ body {
   padding: 0;
 }
 
-img,
 svg {
   max-width: 100%;
   height: auto;
